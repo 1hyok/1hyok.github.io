@@ -891,6 +891,12 @@ a {
   justify-content: center;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .contact-inner .section-number {
   color: #6f5cff;
 }
@@ -910,6 +916,19 @@ a {
 .contact-inner .button-primary {
   background: var(--ink);
   color: var(--paper);
+}
+
+/* ghost 버튼 기본값은 어두운 배경 기준이라 밝은 CONNECT 섹션에서 테두리가 안 보인다 */
+.contact-inner .button-ghost {
+  border-color: rgba(20, 22, 28, 0.22);
+  background: transparent;
+  color: var(--ink);
+}
+
+.contact-inner .button-ghost:hover,
+.contact-inner .button-ghost:focus-visible {
+  border-color: rgba(20, 22, 28, 0.45);
+  background: rgba(20, 22, 28, 0.04);
 }
 
 .site-footer {
@@ -979,7 +998,7 @@ a:focus-visible {
     gap: 16px;
   }
 
-  .nav-links a:not(.nav-github) {
+  .nav-links a:not(.nav-github):not(.nav-blog) {
     display: none;
   }
 
@@ -1047,7 +1066,8 @@ a:focus-visible {
     font-size: 9px;
   }
 
-  .hero-actions {
+  .hero-actions,
+  .contact-actions {
     flex-direction: column;
   }
 
