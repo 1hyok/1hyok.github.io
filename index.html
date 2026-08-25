@@ -152,16 +152,15 @@
                 저장소 보기 <span aria-hidden="true">↗</span>
               </a>
             </div>
-            <div class="product-window mobile-flow" aria-hidden="true">
-              <div class="window-bar"><i></i><i></i><i></i><span>release.flow</span></div>
-              <div class="flow-screen">
-                <div class="flow-heading"><b>Delivery status</b><span>READY</span></div>
-                <div class="flow-line active"><i>01</i><span>UI state</span><b>verified</b></div>
-                <div class="flow-line active"><i>02</i><span>Failure path</span><b>recoverable</b></div>
-                <div class="flow-line"><i>03</i><span>Release gate</span><b>automated</b></div>
-                <div class="flow-progress"><span></span></div>
-              </div>
-            </div>
+            <figure class="project-evidence flow-evidence">
+              <figcaption><span>PRODUCT FLOW</span><span>AUTHOR → RECEIVER</span></figcaption>
+              <ol class="project-flow project-flow-wide" aria-label="Afternote 핵심 제품 흐름">
+                <li><b>기록 작성</b><span>일기·타임레터</span></li>
+                <li><b>전달 조건 설정</b><span>수신자·시점 지정</span></li>
+                <li><b>조건 도래</b><span>예약·사후 전달</span></li>
+                <li><b>본인 확인·열람</b><span>안전한 기록 수신</span></li>
+              </ol>
+            </figure>
           </article>
 
           <article class="project-card project-hampouch">
@@ -182,27 +181,27 @@
                 저장소 보기 <span aria-hidden="true">↗</span>
               </a>
             </div>
-            <div class="product-window api-flow" aria-hidden="true">
-              <div class="window-bar"><i></i><i></i><i></i><span>api.contract</span></div>
-              <div class="api-screen">
-                <p><span class="method">POST</span><b>/api/challenges</b><em>201</em></p>
-                <p><span class="method get">GET</span><b>/api/expenses/day</b><em>200</em></p>
-                <p><span class="method patch">PATCH</span><b>/api/auth/nickname</b><em>200</em></p>
-                <div class="json-block">
-                  <span>{</span><br />
-                  &nbsp;&nbsp;<b>"status"</b>: <i>"consistent"</i>,<br />
-                  &nbsp;&nbsp;<b>"contract"</b>: <i>"explicit"</i><br />
-                  <span>}</span>
-                </div>
-              </div>
-            </div>
+            <figure class="project-evidence flow-evidence">
+              <figcaption><span>DATA FLOW</span><span>AUTH → MYSQL</span></figcaption>
+              <ol class="project-flow project-flow-wide" aria-label="Hampouch 사용자별 상태 변경 흐름">
+                <li><b>상태 변경 요청</b><span>챌린지·휴식·지출</span></li>
+                <li><b>JWT 인증</b><span>사용자 식별</span></li>
+                <li><b>사용자 행 잠금</b><span>동일 사용자만 직렬화</span></li>
+                <li><b>MySQL 커밋</b><span>경합·최종 상태 검증</span></li>
+              </ol>
+            </figure>
           </article>
 
           <article class="project-card project-small project-habit">
             <div class="project-meta"><span>KOTLIN CORE</span><span>03</span></div>
-            <div class="compact-visual" aria-hidden="true">
-              <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><b>USE<br />CASE</b>
-            </div>
+            <figure class="project-evidence flow-evidence">
+              <figcaption><span>DOMAIN FLOW</span><span>CLEAN ARCHITECTURE</span></figcaption>
+              <ol class="project-flow" aria-label="HabitFlow 아키텍처 흐름">
+                <li><b>PRESENTATION</b><span>입력·상태 구독</span></li>
+                <li><b>USE CASES</b><span>등록·기록·연속일</span></li>
+                <li><b>REPOSITORY PORT</b><span>구현 교체 가능</span></li>
+              </ol>
+            </figure>
             <h3>HabitFlow</h3>
             <p>프레임워크와 분리된 습관 추적 코어로 Clean Architecture와 테스트 가능한 유스케이스를 구현했습니다.</p>
             <a class="project-link" href="https://github.com/1hyok/HabitFlow" target="_blank" rel="noreferrer">
@@ -212,10 +211,14 @@
 
           <article class="project-card project-small project-edge">
             <div class="project-meta"><span>EDGE APPLICATION</span><span>04</span></div>
-            <div class="sensor-visual" aria-hidden="true">
-              <div class="sensor-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-              <span>MQTT / LIVE</span>
-            </div>
+            <figure class="project-evidence flow-evidence">
+              <figcaption><span>DEVICE FLOW</span><span>RASPBERRY PI</span></figcaption>
+              <ol class="project-flow" aria-label="Smart Sleep Lighting 핵심 동작 흐름">
+                <li><b>BH1750</b><span>조도 수집</span></li>
+                <li><b>FILTER</b><span>노이즈 완화</span></li>
+                <li><b>MQTT</b><span>상태 발행</span></li>
+              </ol>
+            </figure>
             <h3>Smart Sleep Lighting</h3>
             <p>Raspberry Pi에서 조도 센서 데이터를 필터링하고 MQTT로 안정적으로 발행하는 edge application입니다.</p>
             <a class="project-link" href="https://github.com/1hyok/smart-sleep-lighting-onprem" target="_blank" rel="noreferrer">
@@ -225,10 +228,14 @@
 
           <article class="project-card project-small project-combo">
             <div class="project-meta"><span>COMPOSE APP</span><span>05</span></div>
-            <div class="combo-visual" aria-hidden="true">
-              <div class="combo-chips"><i>밥</i><i>+</i><i>계란</i><i>+</i><i>김</i></div>
-              <span>HILT / RETROFIT</span>
-            </div>
+            <figure class="project-evidence flow-evidence">
+              <figcaption><span>USER FLOW</span><span>COMPOSE APP</span></figcaption>
+              <ol class="project-flow" aria-label="Hackathon-FE 핵심 사용자 흐름">
+                <li><b>재료 선택</b><span>나만의 입력</span></li>
+                <li><b>조합 발견</b><span>레시피 탐색</span></li>
+                <li><b>공유</b><span>조합 확산</span></li>
+              </ol>
+            </figure>
             <h3>Hackathon-FE</h3>
             <p>사용자만의 음식 조합을 발견하고 공유하는 Jetpack Compose 앱입니다. Hilt와 Retrofit, 계층형 구조를 적용했습니다.</p>
             <a class="project-link" href="https://github.com/1hyok/Hackathon-FE" target="_blank" rel="noreferrer">
