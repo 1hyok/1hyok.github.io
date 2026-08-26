@@ -3,27 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b0e14" />
-    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#e8e2d3" />
+    <meta name="color-scheme" content="light" />
     <title>1hyok — Android &amp; Backend Product Engineer</title>
     <meta
       name="description"
-      content="Jetpack Compose로 사용자 흐름을, Spring Boot로 도메인과 API를 만드는 1hyok의 포트폴리오입니다."
+      content="화면에서 발견한 이상 징후를 API와 데이터 경계까지 추적하는 1hyok의 Android·Backend 포트폴리오입니다."
     />
     <link rel="canonical" href="https://1hyok.me/" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="ko_KR" />
     <meta property="og:site_name" content="1hyok" />
     <meta property="og:title" content="1hyok — Android &amp; Backend Product Engineer" />
-    <meta property="og:description" content="앱에서 API까지, 끊기지 않는 제품을 만듭니다." />
+    <meta property="og:description" content="끊어진 흐름의 흔적을 화면에서 데이터까지 추적합니다." />
     <meta property="og:url" content="https://1hyok.me/" />
     <meta property="og:image" content="https://1hyok.me/og.png" />
+    <meta property="og:image:alt" content="검은 나선과 기술 흐름 도식으로 구성한 1hyok Android·Backend 포트폴리오 표지" />
     <meta property="og:image:width" content="1536" />
     <meta property="og:image:height" content="1024" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="1hyok — Android &amp; Backend Product Engineer" />
-    <meta name="twitter:description" content="앱에서 API까지, 끊기지 않는 제품을 만듭니다." />
+    <meta name="twitter:description" content="끊어진 흐름의 흔적을 화면에서 데이터까지 추적합니다." />
     <meta name="twitter:image" content="https://1hyok.me/og.png" />
+    <meta name="twitter:image:alt" content="검은 나선과 기술 흐름 도식으로 구성한 1hyok Android·Backend 포트폴리오 표지" />
     <link rel="stylesheet" href="./styles.css" />
     <script type="application/ld+json">
       {
@@ -69,36 +71,36 @@
     <main id="main">
       <section class="hero shell" id="top">
         <div class="hero-copy">
-          <p class="eyebrow"><span></span>Product engineer · Android &amp; Backend</p>
+          <p class="eyebrow"><span></span>Field note · Android / Backend</p>
           <h1>
-            앱에서 API까지,<br />
-            <span>끊기지 않는 제품</span>을<br class="desktop-break" /> 만듭니다.
+            끊어진 흐름은<br />
+            <span>반드시 흔적</span>을<br class="desktop-break" /> 남깁니다.
           </h1>
           <p class="hero-description">
-            Jetpack Compose로 사용자 흐름을 설계하고, Spring Boot로 도메인과 API를 만듭니다.
-            실패 경로와 상태 일관성, 반복 가능한 배포까지 제품의 전체 흐름을 함께 봅니다.
+            화면에서 드러난 이상 징후를 상태와 API, 데이터 경계까지 따라갑니다.
+            실패 경로를 격리하고 재현 가능한 검증으로 닫아, 제품이 다시 같은 곳에서 끊기지 않게 합니다.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#work">대표 작업 보기 <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#work">작업 기록 보기 <span aria-hidden="true">↓</span></a>
             <a class="button button-ghost" href="https://github.com/1hyok" target="_blank" rel="noreferrer">
-              GitHub 프로필 <span aria-hidden="true">↗</span>
+              GitHub 원본 보기 <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
 
         <aside class="system-map" aria-label="제품 개발 범위">
           <div class="map-topbar">
-            <span>PRODUCT_SURFACE</span>
-            <span class="live"><i></i> BUILDING</span>
+            <span>FAULT_TRACE / 001</span>
+            <span class="live"><i></i> OBSERVING</span>
           </div>
           <div class="map-track">
             <div class="map-index">01</div>
             <div>
-              <p class="map-label">USER EXPERIENCE</p>
+              <p class="map-label">VISIBLE SYMPTOM</p>
               <h2>Android</h2>
               <p>Kotlin · Compose · Flow</p>
             </div>
-            <span class="map-state">UI</span>
+            <span class="map-state">TRACE</span>
           </div>
           <div class="map-connector" aria-hidden="true">
             <span></span><b>STATE · ERROR · CONTRACT</b><span></span>
@@ -106,38 +108,38 @@
           <div class="map-track map-track-backend">
             <div class="map-index">02</div>
             <div>
-              <p class="map-label">DOMAIN &amp; DATA</p>
+              <p class="map-label">ROOT CAUSE</p>
               <h2>Backend</h2>
               <p>Java · Spring Boot · JPA</p>
             </div>
-            <span class="map-state">API</span>
+            <span class="map-state">CAUSE</span>
           </div>
           <div class="map-footer">
-            <span>RELIABILITY</span>
-            <span>AUTOMATION</span>
-            <span>DELIVERY</span>
+            <span>OBSERVE</span>
+            <span>ISOLATE</span>
+            <span>VERIFY</span>
           </div>
         </aside>
       </section>
 
       <div class="signal-strip" role="region" aria-label="핵심 기술 영역">
         <div class="signal-track">
-          <span>KOTLIN</span><i>✦</i><span>JETPACK COMPOSE</span><i>✦</i><span>SPRING BOOT</span><i>✦</i>
-          <span>PRODUCT RELIABILITY</span><i>✦</i><span>GITHUB ACTIONS</span><i>✦</i><span>API CONTRACT</span><i>✦</i>
+          <span>KOTLIN</span><i aria-hidden="true">×</i><span>JETPACK COMPOSE</span><i aria-hidden="true">×</i><span>SPRING BOOT</span><i aria-hidden="true">×</i>
+          <span>FAILURE PATH</span><i aria-hidden="true">×</i><span>REPRODUCIBLE QA</span><i aria-hidden="true">×</i><span>API CONTRACT</span><i aria-hidden="true">×</i>
         </div>
       </div>
 
       <section class="section shell" id="work">
         <div class="section-heading">
-          <p class="section-number">01 / SELECTED WORK</p>
-          <h2>화면과 서버, 두 관점으로<br />제품의 빈틈을 줄입니다.</h2>
+          <p class="section-number">01 / CASE FILES</p>
+          <h2>정상 화면 뒤의 실패 경로를<br />끝까지 추적합니다.</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card project-afternote">
             <div class="project-copy">
               <div class="project-meta">
-                <span>ANDROID PRODUCT</span>
+                <span>CASE 01 · ANDROID</span>
                 <span>01</span>
               </div>
               <h3>Afternote</h3>
@@ -153,7 +155,7 @@
               </a>
             </div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>PRODUCT FLOW</span><span>AUTHOR → RECEIVER</span></figcaption>
+              <figcaption><span>EVIDENCE A · PRODUCT FLOW</span><span>AUTHOR → RECEIVER</span></figcaption>
               <ol class="project-flow project-flow-wide" aria-label="Afternote 핵심 제품 흐름">
                 <li><b>기록 작성</b><span>일기·타임레터</span></li>
                 <li><b>전달 조건 설정</b><span>수신자·시점 지정</span></li>
@@ -166,7 +168,7 @@
           <article class="project-card project-hampouch">
             <div class="project-copy">
               <div class="project-meta">
-                <span>BACKEND SERVICE</span>
+                <span>CASE 02 · BACKEND</span>
                 <span>02</span>
               </div>
               <h3>Hampouch</h3>
@@ -182,7 +184,7 @@
               </a>
             </div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>DATA FLOW</span><span>AUTH → MYSQL</span></figcaption>
+              <figcaption><span>EVIDENCE B · DATA FLOW</span><span>AUTH → MYSQL</span></figcaption>
               <ol class="project-flow project-flow-wide" aria-label="Hampouch 사용자별 상태 변경 흐름">
                 <li><b>상태 변경 요청</b><span>챌린지·휴식·지출</span></li>
                 <li><b>JWT 인증</b><span>사용자 식별</span></li>
@@ -193,9 +195,9 @@
           </article>
 
           <article class="project-card project-small project-habit">
-            <div class="project-meta"><span>KOTLIN CORE</span><span>03</span></div>
+            <div class="project-meta"><span>CASE 03 · KOTLIN CORE</span><span>03</span></div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>DOMAIN FLOW</span><span>CLEAN ARCHITECTURE</span></figcaption>
+              <figcaption><span>EVIDENCE C</span><span>DOMAIN → REPOSITORY</span></figcaption>
               <ol class="project-flow" aria-label="HabitFlow 아키텍처 흐름">
                 <li><b>PRESENTATION</b><span>입력·상태 구독</span></li>
                 <li><b>USE CASES</b><span>등록·기록·연속일</span></li>
@@ -210,9 +212,9 @@
           </article>
 
           <article class="project-card project-small project-edge">
-            <div class="project-meta"><span>EDGE APPLICATION</span><span>04</span></div>
+            <div class="project-meta"><span>CASE 04 · EDGE</span><span>04</span></div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>DEVICE FLOW</span><span>RASPBERRY PI</span></figcaption>
+              <figcaption><span>EVIDENCE D</span><span>SENSOR → MQTT</span></figcaption>
               <ol class="project-flow" aria-label="Smart Sleep Lighting 핵심 동작 흐름">
                 <li><b>BH1750</b><span>조도 수집</span></li>
                 <li><b>FILTER</b><span>노이즈 완화</span></li>
@@ -227,9 +229,9 @@
           </article>
 
           <article class="project-card project-small project-combo">
-            <div class="project-meta"><span>COMPOSE APP</span><span>05</span></div>
+            <div class="project-meta"><span>CASE 05 · COMPOSE</span><span>05</span></div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>USER FLOW</span><span>COMPOSE APP</span></figcaption>
+              <figcaption><span>EVIDENCE E</span><span>INPUT → SHARE</span></figcaption>
               <ol class="project-flow" aria-label="Hackathon-FE 핵심 사용자 흐름">
                 <li><b>재료 선택</b><span>나만의 입력</span></li>
                 <li><b>조합 발견</b><span>레시피 탐색</span></li>
@@ -248,24 +250,24 @@
       <section class="section stack-section" id="stack">
         <div class="shell">
           <div class="section-heading stack-heading">
-            <p class="section-number">02 / WORKING RANGE</p>
-            <h2>하나의 언어가 아니라,<br />하나의 제품을 기준으로.</h2>
+            <p class="section-number">02 / INSTRUMENTS</p>
+            <h2>흔적을 읽고 원인을 좁히는<br />세 가지 도구.</h2>
           </div>
           <div class="stack-grid">
             <article class="stack-card">
-              <p class="stack-kicker">MOBILE / 01</p>
+              <p class="stack-kicker">INSTRUMENT 01 / SURFACE</p>
               <h3>Android</h3>
               <p>사용자가 직접 만나는 상태와 상호작용을 명확하게 설계합니다.</p>
               <div class="stack-tags"><span>Kotlin</span><span>Jetpack Compose</span><span>Coroutines &amp; Flow</span><span>Hilt</span></div>
             </article>
             <article class="stack-card stack-card-backend">
-              <p class="stack-kicker">SERVER / 02</p>
+              <p class="stack-kicker">INSTRUMENT 02 / DOMAIN</p>
               <h3>Backend</h3>
               <p>도메인 규칙과 데이터 경계를 API 계약으로 분명하게 만듭니다.</p>
               <div class="stack-tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>Security</span><span>MySQL</span></div>
             </article>
             <article class="stack-card stack-card-wide">
-              <p class="stack-kicker">SYSTEM / 03</p>
+              <p class="stack-kicker">INSTRUMENT 03 / PROOF</p>
               <h3>Reliability &amp; Delivery</h3>
               <p>실패 경로를 검증하고, 반복 작업을 자동화해 품질이 사람의 기억에 의존하지 않게 합니다.</p>
               <div class="stack-tags"><span>GitHub Actions</span><span>Docker</span><span>Firebase</span><span>AWS</span><span>Contract QA</span></div>
@@ -276,29 +278,29 @@
 
       <section class="section shell approach-section" id="approach">
         <div class="section-heading">
-          <p class="section-number">03 / APPROACH</p>
-          <h2>개발 범위가 넓어도<br />기준은 단순합니다.</h2>
+          <p class="section-number">03 / METHOD</p>
+          <h2>이상 징후를 놓치지 않는<br />세 가지 조사 원칙.</h2>
         </div>
         <ol class="principle-list">
           <li>
             <span>01</span>
-            <div><h3>흐름은 실패했을 때도 이어져야 합니다.</h3><p>정상 화면뿐 아니라 오류, 재시도, 재진입까지 제품 경험으로 봅니다.</p></div>
+            <div><h3>증상은 가장 먼저 화면에 나타납니다.</h3><p>정상 화면뿐 아니라 오류, 재시도, 재진입에 남은 흔적까지 제품 경험으로 봅니다.</p></div>
           </li>
           <li>
             <span>02</span>
-            <div><h3>계약은 구현보다 먼저 명확해야 합니다.</h3><p>UI 상태와 API 응답 사이의 해석 차이를 줄이고 경계를 코드로 남깁니다.</p></div>
+            <div><h3>경계마다 해석의 차이가 숨어 있습니다.</h3><p>UI 상태와 API 응답 사이의 어긋남을 줄이고, 합의한 계약을 코드에 남깁니다.</p></div>
           </li>
           <li>
             <span>03</span>
-            <div><h3>품질은 반복 가능한 시스템이어야 합니다.</h3><p>테스트와 배포 게이트를 자동화해 같은 기준을 계속 적용합니다.</p></div>
+            <div><h3>재현되지 않는 오류는 다시 돌아옵니다.</h3><p>테스트와 배포 게이트를 자동화해 같은 실패를 같은 방식으로 검증합니다.</p></div>
           </li>
         </ol>
       </section>
 
       <section class="contact-section">
         <div class="shell contact-inner">
-          <p class="section-number">04 / CONNECT</p>
-          <h2>화면만, API만 보지 않습니다.<br /><span>제품 전체를 함께 봅니다.</span></h2>
+          <p class="section-number">04 / NEXT CASE</p>
+          <h2>다음 문제의 흔적을<br /><span>함께 추적합니다.</span></h2>
           <ul class="credentials">
             <li><span>2026</span>학생 창업유망팀 300+ 최종 선발</li>
             <li><span>2025</span>KUIT 데모데이 최우수상</li>
@@ -320,7 +322,7 @@
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p>© 1hyok</p>
-        <p>Android · Backend · Product Reliability</p>
+        <p>Android · Backend · Trace / Isolate / Verify</p>
         <a href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
