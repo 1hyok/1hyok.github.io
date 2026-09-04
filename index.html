@@ -197,35 +197,35 @@
           </article>
 
           <article class="project-card project-small project-habit">
-            <div class="project-meta"><span>CASE 03 · KOTLIN CORE</span><span>03</span></div>
+            <div class="project-meta"><span>CASE 03 · SPRING BACKEND</span><span>03</span></div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>EVIDENCE C</span><span>DOMAIN → REPOSITORY</span></figcaption>
-              <ol class="project-flow" aria-label="HabitFlow 아키텍처 흐름">
-                <li><b>PRESENTATION</b><span>입력·상태 구독</span></li>
-                <li><b>USE CASES</b><span>등록·기록·연속일</span></li>
-                <li><b>REPOSITORY PORT</b><span>구현 교체 가능</span></li>
+              <figcaption><span>EVIDENCE C</span><span>SCHEDULE → DELIVER</span></figcaption>
+              <ol class="project-flow" aria-label="Afternote-BE 핵심 흐름">
+                <li><b>RECEIVER</b><span>유일 제약·중복 정리</span></li>
+                <li><b>SCHEDULED</b><span>상태 전환 로직</span></li>
+                <li><b>SENDAT</b><span>RFC 3339 오프셋</span></li>
               </ol>
             </figure>
-            <h3>HabitFlow</h3>
-            <p>프레임워크와 분리된 습관 추적 코어로 Clean Architecture와 테스트 가능한 유스케이스를 구현했습니다.</p>
-            <a class="project-link" href="https://github.com/1hyok/HabitFlow" target="_blank" rel="noreferrer">
+            <h3>Afternote-BE</h3>
+            <p>Afternote의 Java·Spring Boot 백엔드입니다. 타임레터 예약 발송의 수신자 유일 제약과 상태 전환, sendAt 시각 규약을 정리했습니다.</p>
+            <a class="project-link" href="https://github.com/Afternote/Afternote-BE" target="_blank" rel="noreferrer">
               저장소 보기 <span aria-hidden="true">↗</span>
             </a>
           </article>
 
           <article class="project-card project-small project-edge">
-            <div class="project-meta"><span>CASE 04 · EDGE</span><span>04</span></div>
+            <div class="project-meta"><span>CASE 04 · COMPOSE + FIREBASE</span><span>04</span></div>
             <figure class="project-evidence flow-evidence">
-              <figcaption><span>EVIDENCE D</span><span>SENSOR → MQTT</span></figcaption>
-              <ol class="project-flow" aria-label="Smart Sleep Lighting 핵심 동작 흐름">
-                <li><b>BH1750</b><span>조도 수집</span></li>
-                <li><b>FILTER</b><span>노이즈 완화</span></li>
-                <li><b>MQTT</b><span>상태 발행</span></li>
+              <figcaption><span>EVIDENCE D</span><span>AUTH → NOTIFY → AI</span></figcaption>
+              <ol class="project-flow" aria-label="SlowClock 핵심 흐름">
+                <li><b>FIREBASE AUTH</b><span>로그인·공유 코드</span></li>
+                <li><b>FCM</b><span>알림 채널·발송</span></li>
+                <li><b>VERTEX AI</b><span>프롬프트·모델 연동</span></li>
               </ol>
             </figure>
-            <h3>Smart Sleep Lighting</h3>
-            <p>Raspberry Pi에서 조도 센서 데이터를 필터링하고 MQTT로 안정적으로 발행하는 edge application입니다.</p>
-            <a class="project-link" href="https://github.com/1hyok/smart-sleep-lighting-onprem" target="_blank" rel="noreferrer">
+            <h3>SlowClock</h3>
+            <p>Kotlin·Jetpack Compose Android 앱입니다(2025.05~06, 5인 팀). Firebase 인증과 FCM 알림, Vertex AI 연동을 맡았고 이후 멀티모듈·Hilt DI로 전환했습니다.</p>
+            <a class="project-link" href="https://github.com/1hyok/SlowClock" target="_blank" rel="noreferrer">
               저장소 보기 <span aria-hidden="true">↗</span>
             </a>
           </article>
