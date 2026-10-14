@@ -1,6 +1,6 @@
 (() => {
   // Add the site code from your GoatCounter account after creating it.
-  const siteCode = "";
+  const siteCode = "1hyok-me";
 
   if (!/^[a-z0-9-]+$/i.test(siteCode)) return;
 
